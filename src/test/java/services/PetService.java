@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 
 public class PetService {
 
-    public Response getPetById(long petId) {
+    public Response getPetById(int petId) {
         return given()
                 .when()
                 .get("/pet/" + petId)
