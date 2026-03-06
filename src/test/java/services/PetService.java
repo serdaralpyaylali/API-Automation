@@ -15,6 +15,12 @@ public class PetService {
                 .response();
     }
 
+    public Response deletePet(long petId) {
+        return given()
+                .when()
+                .delete("/pet/{petId}", petId);
+    }
+
     public Response createPet(String body) {
         return given()
                 .header("Content-Type", "application/json")
@@ -25,4 +31,5 @@ public class PetService {
                 .extract()
                 .response();
     }
+
 }
