@@ -124,7 +124,6 @@ mvn clean test
 
 The framework can be integrated into:
 
-- GitHub Actions
 - Jenkins
 - GitLab CI
 - Azure DevOps
