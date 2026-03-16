@@ -13,7 +13,6 @@ The framework is designed following best practices such as modular structure, re
 - TestNG
 - Maven
 - Jackson / Gson (JSON parsing)
-- Allure Report (optional)
 - GitHub Actions (CI ready)
 
 ---
@@ -26,12 +25,14 @@ API-Automation
 │ ├── main
 │ │ ├── java
 │ │ │ ├── config
-│ │ │ ├── models
-│ │ │ ├── services
 │ │ │ ├── utils
+│ │
+│ │ ├── resources
+│ │ │ ├── config
 │ │
 │ ├── test
 │ │ ├── java
+│ │ │ ├── services
 │ │ │ ├── tests
 │ │ │ ├── base
 │
@@ -59,10 +60,8 @@ API-Automation
 
 - Positive test scenarios
 - Negative test scenarios
-- Schema validation
 - Response body validation
 - Status code verification
-- Header validation
 
 ---
 
@@ -102,20 +101,12 @@ This allows:
 
 ---
 
-## 📊 Reporting
-
-The framework supports test reporting integrations such as:
-
-- TestNG Reports
-- Allure Reports (optional integration)
-
----
 
 ## 🔄 CI/CD Integration
 
 The project is designed to run seamlessly in CI pipelines.
 
-The CI pipeline automatically runs API tests on every code change to ensure the automation framework remains stable.
+The CI pipeline (GitHub Actions) automatically runs API tests on every code change to ensure the automation framework remains stable.
 
 Example execution:
 
