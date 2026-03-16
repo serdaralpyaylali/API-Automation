@@ -115,6 +115,8 @@ The framework supports test reporting integrations such as:
 
 The project is designed to run seamlessly in CI pipelines.
 
+The CI pipeline automatically runs API tests on every code change to ensure the automation framework remains stable.
+
 Example execution:
 
 mvn clean test
